@@ -10,7 +10,12 @@ class Container extends React.Component {
     };
     this.generateQuote = this.generateQuote.bind(this);
   }
-  generateQuote() {}
+  componentDidMount() {
+    this.setState(this.props.getQuote());
+  }
+  generateQuote() {
+    this.setState(this.props.getQuote());
+  }
   render() {
     return (
       <section id="quote-box" className="wrapper">
