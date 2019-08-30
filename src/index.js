@@ -6,11 +6,11 @@ import "./styles.css";
 
 function App() {
   return (
-    <div className="App">
+    <section className="App">
       <Container />
-    </div>
+    </section>
   );
 }
 
-const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
+const mainElement = document.getElementById("main");
+ReactDOM.render(<App />, mainElement);
