@@ -11,24 +11,34 @@
 
 #author {
   text-align: right;
-  margin-bottom: 20px;
+  margin: 20px;
 }
 
 .controls {
   display: flex;
   justify-content: space-between;
-}
+  align-items: center;
 
-#new-quote {
-  background-color: #baef8b;
-  border: none;
-  border-radius: 4px;
-  color: #000;
-  padding: 10px 15px;
-
-  &:focus {
-    border: 3px solid hsla(125, 100%, 15%, 1);
-    outline: none;
+  > a > img,
+  > .button {
+    border-radius: 4px;
   }
 }
 
+#tweet-quote {
+  display: flex;
+}
+
+.button {
+  background-color: #1da1f2;
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  padding: 10px 15px;
+  text-decoration: none;
+
+  &:focus {
+    border: 3px solid rgb(16, 123, 210);
+    outline: none;
+  }
+}

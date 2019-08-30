@@ -20,22 +20,29 @@ class Container extends React.Component {
     return (
       <section id="quote-box" className="wrapper">
         <div id="text">{this.state.quote}</div>
-        <div id="author">{this.state.author}</div>
+        <div id="author">-- {this.state.author}</div>
         <div className="controls">
           <a
             id="tweet-quote"
             href="twitter.com/intent/tweet"
             title="tweet"
-            targe="_blank"
+            target="_blank"
           >
-            t
+            <img
+              width="36px"
+              height="36px"
+              alt=""
+              src="https://pbs.twimg.com/profile_images/1111729635610382336/_65QFl7B_200x200.png"
+            />
           </a>
-          <input
+          <button
             id="new-quote"
             type="button"
-            value="Generate"
+            className="button"
             onClick={this.generateQuote}
-          />
+          >
+            Generate
+          </button>
         </div>
       </section>
     );
